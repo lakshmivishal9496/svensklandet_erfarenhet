@@ -1,0 +1,523 @@
+  
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'times New Roman', sans-serif;
+}
+
+  /* header section starts here */
+header
+{
+    width:100%;
+    background-color: whitesmoke;
+    position: fixed;
+    z-index:2;
+    background-color: #fff;
+    width: 100%;
+    border-bottom: 1px solid #e4e9f2;
+    
+    padding-right: 50px;
+}
+
+
+header .container{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.header .container .logo
+{
+    padding: 15px 0;
+    height: 25px;
+    
+
+}
+
+.header .container .logo img
+{
+   height:8px;
+   width: 3px;
+
+
+}
+
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav ul li
+{
+    display: inline-block;
+
+
+}
+header nav ul li a
+{  display: inline-block;
+
+  height: 75px;
+  line-height: 75px;
+  padding: 0 15px;
+  text-decoration: none;
+  text-transform:capitalize;
+  font-weight: 400;
+  color:rgb(58, 57, 127);
+  text-shadow: 0 0 3px rgb(12, 4, 255);
+  font-size:x-large;
+  font-family: 'Poppins';
+  transition: 0.3s;
+}
+
+header nav ul li a:hover
+{
+  background-color:whitesmoke!important;
+  color: #e47105!important;
+}
+
+
+
+header nav ul li a:hover
+{ background-color: var(--gray) ;
+
+}
+
+  /* header section ends here */
+
+
+
+
+
+
+
+  /* autumn section starts here */
+.autumn
+{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    background:radial-gradient(rgb(16, 15, 15),rgb(94, 61, 149));
+    justify-content: center;
+    align-items: center;
+
+}
+.autumn h2
+{
+    color:#fff;
+    font-size: 7em;
+    text-transform:capitalize;
+
+}
+.autumn  p
+{
+    color:#fff;
+    font-size: 3em;
+    text-transform:capitalize;
+
+}
+.autumn .set
+{
+    position: absolute;
+    width: 100%;
+    height:100%;
+    top:0;
+    left:0;
+    pointer-events: none;
+}
+.autumn .set div
+{
+    position: absolute;
+    display: block;
+}
+.autumn .set div:nth-child(1)
+{
+    left: 20%;
+    animation: animateautumn 15s linear infinite ;
+    animation-delay: -7s;
+}
+.autumn .set div:nth-child(2)
+{
+    left: 50%;
+    animation: animateautumn 20s linear infinite ;
+    animation-delay: -5s;
+}
+.autumn .set div:nth-child(3)
+{
+    left: 70%;
+    animation: animateautumn 15s linear infinite ;
+    animation-delay: 0s;
+}
+.autumn .set div:nth-child(4)
+{
+    left: 0%;
+    animation: animateautumn 15s linear infinite ;
+    animation-delay: -5s;
+}
+.autumn .set div:nth-child(5)
+{
+    left: 85%;
+    animation: animateautumn 18s linear infinite ;
+    animation-delay: -10s;
+}
+.autumn .set div:nth-child(6)
+{
+    left: 0%;
+    animation: animateautumn 12s linear infinite ;
+
+}
+.autumn .set div:nth-child(7)
+{
+    left: 15%;
+    animation: animateautumn 14s linear infinite ;
+
+
+}
+.autumn .set div:nth-child(8)
+{
+    left: 60%;
+    animation: animateautumn 15s linear infinite ;
+
+
+}
+
+
+@keyframes animateautumn {
+    0%
+    {
+        opacity: 0;
+        top:-10%;
+        transform: translateX(20px) rotate(0deg);
+    }
+    10%
+    {
+        opacity: 1;
+   
+    }
+    20%
+    {
+        transform: translateX(-20px) rotate(45deg);
+   
+    }
+    40%
+    {
+        transform: translateX(-20px) rotate(90deg);
+   
+    }
+    60%
+    {
+        transform: translateX(20px) rotate(180deg);
+   
+    }
+    80%
+    {
+        transform: translateX(-20px) rotate(180deg);
+
+    }
+    100%
+    {   top:110%;
+        transform: translateX(-20px) rotate(225deg);
+
+    }
+
+
+    
+}
+
+/* autumn section ends here */
+
+.rain{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    background:url('/images/backgroundrain.jpg');
+    justify-content: center;
+    align-items: center;
+    background-position: contain;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: neon 2s linear infinite;
+
+}
+
+@keyframes neon {
+    
+    0%,100%
+    {
+        filter: hue-rotate(0deg);
+    }
+    50%
+    {
+        filter: hue-rotate(360deg);
+    }
+}
+
+
+
+.rain::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(/images/rain.png);
+    animation:  rains 0.2s linear infinite;
+
+}
+
+.rain h2
+{
+    color:#fff;
+    font-size: 6em;
+    text-transform:capitalize;
+
+}
+
+.rain h2 span
+{
+    color:#fff;
+    font-size: 3em;
+    text-transform:capitalize;
+  
+
+
+}
+
+@keyframes rains {
+    
+    0%
+    {
+        background-position: 0 0;
+        
+    }
+    100%
+    {
+         background-position: 20% 100%;
+       
+    }
+}
+main
+{
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background: linear-gradient(rgba(162, 233, 162, 0.267), rgb(225, 28, 225));
+}
+.box
+{   
+    position: relative;
+    width: 500px;
+    height: 500px;
+    background:linear-gradient( rgb(218, 66, 155),rgba(129, 86, 86, 0.267)) ;
+    border:2px  darkorchid;
+    overflow: hidden;
+    box-shadow: inset 0  0 100px rgba(182, 23, 255, 0.467) , 0 20px 50px rgba(0,0,0,.5);
+    margin-left: 20px;
+   
+
+}
+
+
+
+
+.box .snow
+{   
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('/images/snow.png');
+    z-index: 2;
+    mix-blend-mode: screen;
+}
+.snow:nth-child(1)
+{
+animation: animate 10s linear infinite;
+}
+.snow:nth-child(2)
+{
+animation: animate2 15s linear infinite;
+}
+
+.snow:nth-child(3)
+{
+animation: animate3 20s linear infinite;
+}
+
+.snow:nth-child(4)
+{
+animation: animate2 14s linear infinite;
+}
+
+.snow:nth-child(5)
+{
+animation: animate 16s linear infinite;
+}
+
+
+@keyframes animate {
+    0%
+    {
+        background-position-x:120px;
+        background-position-y:200px;
+    }
+
+     100%
+        {
+            background-position-x:50px;
+            background-position-y:400px;
+    
+        }
+    
+
+    
+}
+
+@keyframes animate2 {
+    0%
+    {
+        background-position-x:100px;
+        background-position-y:20px;
+    }
+
+     100%
+        {
+            background-position-x:100px;
+            background-position-y:400px;
+    
+        }
+    
+
+    
+}
+@keyframes animate3 {
+    0%
+    {   transform: scale(1.5) ;
+        background-position-x:-100px;
+        background-position-y:0px;
+    }
+
+     100%
+        {   transform: scale(1.5) ;
+            background-position-x:-100px;
+            background-position-y:400px;
+    
+        }
+    
+
+    
+}
+
+.summer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background:url(/images/Midsummer1.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.text
+{
+    position: relative;
+    font-weight: 600;
+    font-size: 13em;
+    color: yellow;
+    filter: url(#fire);
+    text-shadow: 0 0 10px #ff8c3b , 0 0 40px #ff8c3b,   0 0 80px #ff8c3b, 0 0 160px #ff8c3b, 0 0 240px #ff8c3b;
+
+
+}
+.desc
+{
+    position: absolute;
+    margin-bottom: 270px;
+    font-size: 4em;
+    color: yellow;
+  
+    text-shadow: 0 0 10px #ff8c3b , 0 0 40px #ff8c3b,   0 0 80px #ff8c3b, 0 0 160px #ff8c3b, 0 0 240px #ff8c3b
+}
+
+.container_spring
+{ height: 100vh;
+    width: 100%;
+    background: url('/images/green.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+  
+
+}
+
+.spring {
+   
+    display:block;
+    width:400px;
+    height:200px;
+    position:relative;
+    left:210%;
+    top:  -30%;
+    transform:translate(-50%,-50%);
+  }
+  
+  .tree {
+    fill: #31ff15;
+  }
+  
+  .circle-mask {
+    transform-origin: 50% 90%;
+    animation: scale 5s infinite ease-out;
+  }
+  
+  @keyframes scale {
+    0%, 100% {
+      transform: scale(0.0);
+    }
+    7%, 90% {
+      transform: scale(0.4);
+    }
+    50% {
+      transform: scale(1);
+    }
+  }
+
+
+#p_lt_ctl01_pageplaceholder_p_lt_ctl01_statichtml_2_ContainerWrapper {
+    display: block;
+    max-width:400px;
+    background-color: #e4e9f2;
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 280px;
+     color: rgb(143, 26, 159);
+    
+    height:400px;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

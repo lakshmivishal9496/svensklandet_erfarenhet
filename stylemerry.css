@@ -1,0 +1,788 @@
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'times New Roman', sans-serif;
+}
+body
+{
+    background-color: white;
+}
+
+.header_nav{
+    
+    display: flex;
+    justify-content: flex-end;
+    align-items: left;
+    min-height: 0vh;
+    overflow: hidden;
+    background-color: #a79dd5;
+ 
+    
+   
+
+}
+
+
+header
+{
+    width:100%;
+    background-color: whitesmoke;
+    position: fixed;
+    z-index:2;
+    background-color: #fff;
+    width: 100%;
+    border-bottom: 1px solid #e4e9f2;
+    
+    padding-right: 50px;
+}
+
+
+header .container{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.header .container .logo
+{
+    padding: 15px 0;
+    height: 25px;
+
+}
+
+.header .container .logo img
+{
+   height:8px;
+   width: 3px;
+
+}
+
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav ul li
+{
+    display: inline-block;
+
+
+}
+header nav ul li a
+{   display: inline-block;
+
+    height: 75px;
+    line-height: 75px;
+    padding: 0 15px;
+    text-decoration: none;
+    text-transform:capitalize;
+    font-weight: 400;
+    color:rgb(58, 57, 127);
+    text-shadow: 0 0 3px rgb(12, 4, 255);
+    font-size:x-large;
+    font-family: 'Poppins';
+    transition: 0.3s;
+
+}
+
+header nav ul li a:hover
+{
+  background-color:whitesmoke!important;
+  color: #872080!important;
+}
+
+
+
+header nav ul li a:hover
+{ background-color: var(--gray) ;
+
+}
+
+
+.container_merry
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    width:100%;
+    
+}
+
+.container_merry .myvideo
+{ 
+    position: relative;
+
+    margin-left: -3px;
+    width: 35%;
+    height: 50vh;
+    filter: grayscale(1);
+    border: 4px solid rgb(202, 31, 31);
+}
+
+.container_merry .myvideo:hover
+{  filter: grayscale(0);
+}
+.container_merry .myvideo video
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+#p_lt_ctl01_pageplaceholder_p_lt_ctl01_statichtml_2_ContainerWrapper {
+    display: block;
+    max-width:500px;
+    background-color: whitesmoke;
+    font-size: 30px;
+    font-weight: 600;
+    margin-left: 50px;
+     color: rgb(143, 26, 159);
+    
+    height:400px;
+
+
+}
+#main p
+{
+    color: rgb(110, 27, 121);
+    text-shadow: #21c4a3;
+    font-weight: 500;
+    font-size: 20px;
+}
+section
+{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+
+}
+.bg12
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('/images/white-ripped-paper-black-background.jpg');
+    background-size: cover;
+    background-position: center;
+   
+}
+.paper
+{
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    background: url('/images/sweden-flag-handsome-young-muscular-man-black-background.jpg');
+    background-size: contain ;
+    background-position: right;
+    mix-blend-mode: lighten;
+   
+}
+.outerbox
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(rgb(12, 23, 12), rgb(102, 44, 151));
+
+}
+.cardett
+{
+    position: relative;
+    width:300px;
+    height: 400px;
+    background: #fff;
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+    box-shadow: 10px 20px 40px rgba(0, 0,0, 0.30) ;
+}
+.cardett:hover
+{
+    transform:translateX(50%);
+
+}
+.cardett .details{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cardett .details .content_valborg h2
+{
+    text-align: center;
+    font-weight: 700;
+    line-height: 1em;
+      color: #8112e2;
+
+} 
+.cardett .details .content_valborg h2 span
+{
+  color: #8112e2;
+  font-size: 0.6em;
+  font-weight: 500;
+}
+.cardett .imgbox
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transform-origin: left;
+    transform-style: preserve-3d;
+    background: black;
+    transition: 1s ;
+}
+
+
+.cardett:hover .imgbox
+{
+  transform:rotateY(-180deg)
+}
+.cardett .imgbox img
+{ 
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform-style: preserve-3d;
+
+
+}
+
+
+
+/* Haloween and crayfish split screen */
+
+.split{
+    position: relative;
+    height: 100vh;
+    display: flex;
+
+}
+.split .screen
+{
+ position: relative;
+ flex-grow: 1;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ overflow: hidden;
+ transition:1s;
+}
+
+.split .screen:hover
+{
+    flex-grow: 6;
+
+
+}
+
+
+
+.split .screen:nth-child(1)
+{
+    background: #c39fe2;
+}
+.split .screen:nth-child(2)
+{
+    background: #cba7c3;
+}
+.split .screen .cardhalloween
+{
+max-width: 300px;
+text-align: center;
+transition:0.5s;
+
+}
+.split .screen .imgcontain
+{
+width: 300px;
+height: 300px;
+border-radius: 50%;
+overflow:hidden;
+object-fit:contain;
+
+}
+.split .screen .cardhalloween a
+{
+padding:10px;
+background: #380f5b;
+color: rgb(214, 0, 150);
+font-weight: 600;
+font-size: 19px;
+text-decoration:none;
+border-radius: 70%;
+
+}
+ .content
+{
+    position: absolute;
+    top:0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+    padding: 100px;
+ 
+    background: rgb(200, 140, 140);
+    transition:0.5s;
+    opacity: 0;
+    visibility: hidden;
+
+}
+.content img
+{
+    width: 300px;
+    height: 300px;
+   border-radius: 50%;
+    overflow:hidden;
+    position: absolute;
+    margin-left: 90px;
+    object-fit: cover;
+   
+  
+
+}
+
+
+.split .screen .cardhalloween a:hover ~ .content,
+.content:hover{
+    opacity: 1;
+    visibility: visible;
+
+}
+
+
+
+/* lucia video background*/
+.lucia
+{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background: url('/images/Lucia-cropped-e1576106540740.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
+   
+}
+
+
+
+
+.waviy {
+    position: relative;
+    -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,.2));
+    font-size: 18vw;
+  }
+  .waviy span {
+
+    position: relative;
+    display: inline-block;
+    color: #fff;
+    text-shadow:
+    0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px rgb(255, 21, 0),
+    0 0 80px rgb(255, 162, 0),
+    0 0 90px rgb(236, 32, 9),
+    0 0 100px rgb(255, 0, 0),
+    0 0 150px rgb(255, 0, 0);
+
+
+    text-transform: uppercase;
+    animation: waviy 1s infinite;
+    animation-delay: calc(.1s * var(--i));
+    
+  }
+  @keyframes waviy {
+    0%,40%,100% {
+      transform: translateY(0)
+    }
+    20% {
+      transform: translateY(-20px)
+    }
+  }
+
+
+
+
+
+/* midsummer */
+.summer
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'times new roman';
+    background: url('/images/sommar.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.cardsummer
+{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    background: #262626;
+    overflow: hidden;
+
+}
+
+input ,
+.toggle
+{
+    position: absolute;
+    width:50px;
+    height: 50px;
+    bottom: 20px;
+    right:20px ;
+    outline: none;
+    z-index: 10;
+
+
+
+}
+
+input
+{
+    opacity: 0;
+}
+
+.toggle{
+    pointer-events: none;
+    border-radius: 50%;
+    background: rgb(179, 111, 193);
+    transition:0.5s;
+    text-align: center;
+    line-height: 50px;
+    font-size: 36px;
+    color: #21c4a3;
+    font-weight: 900;
+    box-shadow: 0 0 0 0px #3ac371;
+  
+
+
+}
+
+input:checked ~ .toggle
+
+{
+    box-shadow: 0 0 0 500px #6cc435;
+    transform: rotate(310deg);
+}
+
+.containerimg,
+.summercontent
+{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+
+
+
+}
+.summercontent
+{
+    padding: 20px;
+    box-sizing: border-box;
+    z-index: 11;
+    pointer-events: none;
+    transition:0.5s;
+    opacity: 0;
+
+}
+
+input:checked ~ .summercontent
+{
+    opacity: 1;
+    transition-delay:0.5s ;
+}
+.summercontent h2
+{
+    margin-bottom: 5px;
+    color: #8112e2;
+    text-shadow:
+    0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px rgb(255, 21, 0),
+    0 0 80px rgb(255, 0, 0),
+    0 0 100px rgb(255, 0, 0);
+    text-align: center;
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 120%;
+    letter-spacing: 0.2 em;
+    text-transform: uppercase;
+
+}
+.summercontent p
+{
+    margin: 0;
+    padding: 0;
+    color: #8112e2;
+
+    text-align: center;
+
+}
+
+
+
+
+.julcontainer
+{  position: relative;
+   display: flex;
+   color: white;
+   height: 100vh;
+   background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url('/images/wintersweden.jpg');
+   width: 100%;
+   background-size: cover;
+   animation: neon 2s linear infinite;
+
+
+}
+
+@keyframes neon {
+    
+    0%,100%
+    {
+        filter: hue-rotate(0deg);
+    }
+    50%
+    {
+        filter: hue-rotate(360deg);
+    }
+}
+.julcontainer .greet
+{
+    position: relative;
+    margin-left: 300px;
+    margin-top: 250px;
+    font-weight: 800;
+    font-size: 100px;
+   
+}
+.typing
+{  position: relative;
+   margin-left: 30px;
+   margin-top: 200px;
+   font-weight: 800;
+   font-size: 13vw;
+
+}
+
+.typing::after
+{
+    content:"";
+    position: absolute;
+    width: 1px;
+    height: 35%;
+    right: -6px;
+    border-right: 2px solid white;
+    animation: blink 0.5s infinite ease;
+
+}
+@keyframes blink {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity:1 ;
+    }
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.wrapper
+{
+
+font-weight: 700;
+letter-spacing: 0;
+color:black;
+margin-top: 0;
+
+}
+
+.box-container {
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    justify-content: space-evenly;
+    padding: 0;
+    outline: 0;
+    position: relative;
+    width:auto;
+    height: 200px;
+}
+.margin-bottom-medium {
+    margin-bottom: 60px!important;
+    margin-left: 200px;
+    max-width: 1100px;
+}
+.margin-top-small {
+    margin-top: 20px!important;
+}
+[class*=col-] {
+    position: relative;
+}
+.col-xs-12 {
+    grid-column-end: span 12;
+}
+.grid>*, .row>* {
+    grid-column-end: span 12;
+    
+}
+.card {
+    margin-left: 200px;
+    margin-right: -200px;
+   
+    max-width: 1400px;
+    --card-gradient: rgba(0, 0, 0, 0.8);
+  --card-gradient: #5e9ad9, #e271ad;
+ --card-gradient: tomato, orange;
+  --card-blend-mode: overlay;
+ --card-blend-mode: multiply;
+
+  background-color: #fff;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    box-shadow: 0.05rem 0.1rem 0.3rem -0.03rem rgba(0, 0, 0, 0.45);
+    padding-bottom: 1rem;
+    background-image: linear-gradient(
+      var(--card-gradient),
+      white max(9.5rem, 27vh)
+    );
+    overflow: hidden;
+}
+  
+.card img
+ {
+      border-radius: 0.5rem 0.5rem 0 0;
+      width: 100%;
+      object-fit: cover;
+      height: max(20rem, 60vh);
+      max-height: max(10rem, 40vh);
+      aspect-ratio: 4/3;
+  
+  
+     
+    }
+  
+    .card > :last-child {
+      margin-bottom: 0;
+    }
+  
+    .card:hover,
+    .card:focus-within {
+      --card-gradient: #24a9d5 max(8.5rem, 20vh);
+    }
+
+  
+  .card h3 {
+    margin-top: 1rem;
+    font-size: 28px;
+    
+  }
+  
+  .card a {
+    color: inherit;
+    
+    text-decoration: none;
+    
+  }
+  .card p {
+    color: inherit;
+    font-size: 18px;
+    text-decoration: none;
+    
+  }
+  
+  .card-wrapper {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30ch, 1fr));
+    grid-gap: 1.5rem;
+    max-width: 360vw;
+    width: 120ch;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: left;
+  }
+  
+  .news
+  { 
+    color: #fff!important;
+   
+    font-weight: 700;
+    letter-spacing: .02em;
+    text-shadow: none;
+    margin-left: 600px;
+    border: none;
+    text-transform: uppercase;   
+    background-color: #929797!important;
+    padding: 14px 26px 16px;
+    font-size: 15px;
+    
+}
+.news:hover
+{
+   color:#b1bccb
+
+ }
+ .card:hover
+ {
+    color:#7b8289
+ 
+  }
+.news_start p{
+    font-weight: 700;
+    letter-spacing: 0;
+    color: #454B41;
+    margin-top: 0;
+    font-size: 37.32px;
+    line-height: 120%;
+    margin-bottom: 15px;
+    margin-left: 190px;
+}
